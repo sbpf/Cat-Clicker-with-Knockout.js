@@ -2,6 +2,7 @@ var ViewModel = function(){
     this.name = ko.observable("percy");
     this.clickCount = ko.observable(0);
     this.imgSrc = ko.observable('img/sleep.jpg');
+    this.nickNames = ko.observable(["kitty", "pussy", "cat"]);    
     
     this.incrementCounter = function(){
         this.clickCount(this.clickCount()+1);
@@ -18,7 +19,6 @@ var ViewModel = function(){
         return "adult";
     },this);
 
-    this.nickNames = ["kitty", "pussy", "cat"];
     
 }
 
